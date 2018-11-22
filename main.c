@@ -150,9 +150,17 @@ int main() {
     przypadek = rozwiaz_rownanie_kwadratowe(a, b, c, &x1, &x2);
 
     switch (przypadek) {
+        case 3:
+            printf("x0 = %lf\n", x1);
+            break;
+
         case 4:
             printf("x1 = %lf\n", x1);
-            printf("x1 = %lf\n", x1);
+            printf("x2 = %lf\n", x2);
+            break;
+
+        case 5:
+            printf("x0 = %lf\n", x1);
             break;
     }
 
